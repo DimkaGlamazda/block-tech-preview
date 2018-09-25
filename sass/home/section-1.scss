@@ -77,10 +77,112 @@
 						background-color: rgba(0,0,0, .5);
 						@include position(absolute, 0, 5px, 0, 5px);						
 						@include transition(all 1s ease);
+						height:inherit;
+
 						.slide-number {
 							@include position(absolute, false, false, 30px, 35px);
 							color:rgba(255, 255, 255, 1);
 							@include font-size(22px);
+						}
+
+						.content-1 {
+							@include flex(center, center, column);
+							height:inherit;
+							color: #fff;
+
+							h4 {
+								@include font-size(24px);
+								font-weight: 400;
+								line-height: 40px;
+							}
+
+							h5 {
+								@include font-size(27px);
+								position:relative;
+								font-weight: 400;
+								line-height: 60px;
+
+								&:after {
+									content: "";
+									@include position(absolute, 75px, 30%, false, 30%);
+									height: 1px;
+									width: 40%;
+									background-color: #fff;
+								}
+							}
+
+							p {
+								@include font-size(17px);
+								font-weight: 300;
+								text-align: center;
+								padding: 0 10%;
+								margin-top:40px;
+							}
+
+							a {
+								color:#fff;
+								display:block;
+								padding:10px 15px;
+								border: 1px solid #fff;
+								margin-top:30px;
+								text-decoration:none;
+							}
+						}
+
+						.content-2 {
+							@include flex(center, center, column);
+							position:relative;
+							color:#fff;
+							margin: 10% 30% 10% 10%;
+							padding: 50px;
+							background-color: rgba(0, 146, 255, 1);
+
+							h3 {
+								text-align: center;
+								font-weight: 400;
+								margin-bottom: 50px;
+
+								&:after {
+									content: "";
+									@include position(absolute, 140px, 30%, false, 30%);
+									height: 1px;
+									width: 40%;
+									background-color: #fff;
+								}
+							}
+
+							p {
+								text-align: center;
+							}
+						}
+
+						.content-3 {
+							@include flex();
+							
+							height:150px;
+							width:65%;
+							background-color: #392E7F;
+							color:#fff;
+							margin: 165px auto 0;
+
+
+							div {
+								width:50%;
+								text-align: center;
+								padding: 40px;
+
+								&:nth-child(1) {
+									position:relative;
+									
+									&:after {
+										content: "";
+										background-color: #fff;
+										@include position(absolute, 14px, -4px);
+										height: 100px;
+										width: 1px;
+									}
+								}
+							}
 						}
 					}
 
