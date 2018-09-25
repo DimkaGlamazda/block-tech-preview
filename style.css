@@ -9067,6 +9067,8 @@ body {
 .h-section-1 .section-body .bx-wrapper .home-slider > div {
   padding: 0 5px;
   position: relative;
+  height: 500px;
+  overflow: hidden;
 }
 .h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -9171,7 +9173,7 @@ body {
   height: 500px;
   overflow: hidden;
   margin-top: 10px;
-  background: url(img/city-bg.png) center bottom;
+  background: url(media/home/section-1/bg.png) center bottom;
 }
 .h-section-1 .section-body .home-representative-message-section .representative-message-section-bg {
   position: absolute;
@@ -9207,13 +9209,13 @@ body {
   background-size: cover;
 }
 .h-section-1 .section-body .home-representative-message-section .layer-1 div {
-  background: url(img/summary-bg-layer-1.png) center bottom;
+  background: url(media/home/section-1/l-1.png) center bottom;
 }
 .h-section-1 .section-body .home-representative-message-section .layer-2 div {
-  background: url(img/summary-bg-layer-2.png) center bottom;
+  background: url(media/home/section-1/l-2.png) center bottom;
 }
 .h-section-1 .section-body .home-representative-message-section .layer-3 div {
-  background: url(img/summary-bg-layer-3.png) center bottom;
+  background: url(media/home/section-1/l-3.png) center bottom;
 }
 .h-section-1 .section-body .home-representative-message-section.view .representative-message-bg-layer {
   width: 100%;
@@ -9353,15 +9355,17 @@ body {
   filter: alpha(opacity=0);
   padding: 130px 30px 0;
   color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 .h-section-2 .section-body .h-section-part-1 .h-section-part-1-column.active img {
   left: 0;
   top: 0;
+  z-index: 0;
 }
 .h-section-2 .section-body .h-section-part-1 .h-section-part-1-column.active h4 {
   color: white;
   transition: color 550ms;
+  z-index: 2;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .h-section-2 .section-body .h-section-part-1 .h-section-part-1-column.active h4 {
@@ -9373,6 +9377,7 @@ body {
   filter: alpha(opacity=100);
   transition: opacity 550ms;
   background-color: #0092ff;
+  z-index: 2;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .h-section-2 .section-body .h-section-part-1 .h-section-part-1-column.active a {
@@ -9383,6 +9388,9 @@ body {
   opacity: 1;
   filter: alpha(opacity=100);
   transition: opacity 550ms;
+  height: inherit;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .h-section-2 .section-body .h-section-part-1 .h-section-part-1-column.active p {
@@ -9470,11 +9478,22 @@ body {
   transform: skewX(-19deg) scale(1.1);
   transition: all 0.33s;
   overflow: hidden;
+  z-index: 1;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .h-section-3 .section-body .h-section-3-row .shape-left {
     transition: none;
   }
+}
+.h-section-3 .section-body .h-section-3-row .shape-left:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 .h-section-3 .section-body .h-section-3-row .shape-left img {
   position: absolute;
@@ -9547,6 +9566,16 @@ body {
     transition: none;
   }
 }
+.h-section-3 .section-body .h-section-3-row .shape-right:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
 .h-section-3 .section-body .h-section-3-row .shape-right:hover {
   -moz-transform: skewX(11deg);
   -o-transform: skewX(11deg);
@@ -9573,6 +9602,7 @@ body {
   color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-weight: 200;
 }
 .h-section-3 .section-body .h-section-3-row .content h5 {
   font-size: 17px;
@@ -9583,6 +9613,7 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   padding-bottom: 20px;
+  font-weight: 200;
 }
 .h-section-3 .section-body .h-section-3-row .content p {
   font-size: 20px;
@@ -9615,7 +9646,7 @@ body {
 .h-section-4 .h-news-item .description {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
   font-size: 17px;
   font-size: 1.0625rem;
@@ -9629,7 +9660,7 @@ body {
   left: 28px;
   content: "";
   display: block;
-  background: url(img/news-arrow.svg) no-repeat;
+  background: url(media/icons/news-arrow.svg) no-repeat;
   background-size: cover;
   height: 16px;
   width: 35px;

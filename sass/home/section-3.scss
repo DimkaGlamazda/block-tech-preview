@@ -14,6 +14,14 @@
 				@include transform(skewX(-19deg) scale(1.1));
 				@include transition(all .33s);
 				overflow: hidden;
+				z-index:1;
+
+				&:before {
+					@include position(absolute, 0,0,0,0);
+					content: "";
+					background-color: rgba(0,0,0, .4);
+					z-index: 2;
+				}
 				
 				img {
 					@include position(absolute, 0, false, false, 0);
@@ -50,6 +58,13 @@
 					@include transition(all .33s);
 				}
 
+				&:before {
+					@include position(absolute, 0,0,0,0);
+					content: "";
+					background-color: rgba(0,0,0, .4);
+					z-index: 2;
+				}
+
 				&:hover {
 
 					@include transform(skewX(11deg));
@@ -68,6 +83,7 @@
 				color: #fff;
 				padding-top: 50px;
 				padding-bottom: 50px;
+				font-weight: 200;	
 
 				h5 {
 					@include font-size(17px);
@@ -76,7 +92,8 @@
 
 				h4 {
 					@include font-size(20px);
-					padding-bottom: 20px;	
+					padding-bottom: 20px;
+					font-weight: 200;
 				}
 
 				p {

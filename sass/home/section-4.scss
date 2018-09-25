@@ -26,7 +26,7 @@
 		}
 		
 		.description {
-			@include flex();
+			@include flex(center, flex-start);
 			@include font-size(17px);
 			position: relative;
 			width:80%;
@@ -38,7 +38,7 @@
 				@include position(absolute,false, false, false, 28px);
 			    content: "";
 			    display: block;
-			    background: url(img/news-arrow.svg) no-repeat;
+			    background: url(media/icons/news-arrow.svg) no-repeat;
 			    background-size: cover;
 			    height: 16px;
 			    width: 35px;

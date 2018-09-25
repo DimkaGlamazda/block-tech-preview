@@ -70,6 +70,8 @@
 				& > div {
 					padding:0 5px;
 					position:relative;
+					height: 500px;
+					overflow:hidden;
 
 					.slider-item-overlay {
 						background-color: rgba(0,0,0, .5);
@@ -157,7 +159,7 @@
 			overflow: hidden;
 			margin-top: 10px;
 			
-			background: url(img/city-bg.png) center bottom;
+			background: url(media/home/section-1/bg.png) center bottom;
 
 			.representative-message-section-bg {
 				@include position(absolute, 0px, false, false, 0px);
@@ -187,18 +189,18 @@
 
 			.layer-1 {
 				div {
-					background: url(img/summary-bg-layer-1.png) center bottom;
+					background: url(media/home/section-1/l-1.png) center bottom;
 				}
 			}
 
 			.layer-2 {
 				div {
-					background: url(img/summary-bg-layer-2.png) center bottom;
+					background: url(media/home/section-1/l-2.png) center bottom;
 				}
 			}
 			.layer-3 {
 				div {
-					background: url(img/summary-bg-layer-3.png) center bottom;
+					background: url(media/home/section-1/l-3.png) center bottom;
 				}
 			}
 
