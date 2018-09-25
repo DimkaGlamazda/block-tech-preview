@@ -1,0 +1,140 @@
+.h-section-2 {
+	.section-body {
+	
+		margin-top:60px;
+
+		.h-section-part-1 {
+
+			@extend .wrapper;
+
+			@include flex(center, space-between);
+
+			.h-section-part-1-column {
+				@include calc(width, 100% / 3);
+
+				margin: 0 10px;
+				background-color: rgba(246, 248, 249, 1);
+				height:570px;
+				overflow:hidden;
+				position: relative;
+
+				img {
+					@include position(relative, 232px, false, 0);
+					@include transition(top 550ms cubic-bezier(.23,1,.32,1));
+					height:100%;
+					z-index:1;
+				}
+
+				h4 {
+					@include position(absolute, 0, false, false, 0);
+					@include font-size(22px);
+					padding: 70px 30px 0;
+					color: #000;
+					z-index:2;
+				}
+
+				a {
+					@include position(absolute, false, 0, 0, 0);
+					@include font-size(17px);
+					@include opacity(0);
+					margin: 0 30px 30px;
+					color: #fff;
+					z-index:2;
+					display:block;
+					padding:20px 0;
+					text-align: center;
+				}
+
+				p {
+					@include position(absolute, 0, 0, false, 0);
+					@include font-size(15px);
+					@include opacity(0);
+					padding: 130px 30px 0;
+					color: #fff;
+					z-index:2;
+				}
+
+				&.active
+				{
+					img {
+						left:0;
+						top:0;
+					}
+					h4 {
+						color:rgb(255,255,255);
+						@include transition(color 550ms);
+					}
+
+					a {
+						@include opacity(1);
+						@include transition(opacity 550ms);
+						background-color: rgb(0, 146, 255); 
+
+					}
+
+				 	p {
+						@include opacity(1);
+						@include transition(opacity 550ms);
+					}
+				}
+			}
+		}
+
+		.h-section-part-2 {
+			margin: 100px 0;
+			background-color: rgba(34, 42, 74, 1);
+
+			.h-section-part-2-body {
+				@extend .wrapper;
+				@include flex();
+				padding: 90px 0;
+				color:#fff;
+				div {
+					width: 50%
+				}
+
+				h4 {
+					@include font-size(24px);
+					position:relative;
+					width: 90%;
+					text-align: center;
+					padding-bottom: 30px;
+					margin-bottom: 0;
+					margin-top: 8%;
+					margin-right: 10%;
+
+					&:after {
+						@include calc(left, 70% / 2);
+						@include calc(right, 70% / 2);
+						content: "";
+						position:absolute;
+						width: 30%;
+						bottom:0;
+						height: 2px;
+						background-color: rgba(0, 146, 255, 1);
+					}
+				}
+
+				p {
+					@include font-size(16px);
+					width: 90%;
+					margin-right: 10%;
+					text-align: center;
+					padding-bottom: 30px;
+					padding-top: 40px;
+				}
+
+				a {
+					display: block;
+					width: 30%;
+					padding: 10px 0;
+					color:#fff;
+					border: 1px solid #fff;
+					margin: 40px auto 0;
+					text-align: center;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

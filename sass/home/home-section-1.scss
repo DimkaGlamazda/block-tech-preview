@@ -1,0 +1,271 @@
+.h-section-1 {
+	@extend .section-margin;
+	
+	.section-body
+	{
+		width:100%;
+		overflow:hidden;
+
+		.dots {
+			margin-bottom: 40px;
+
+			@include flex();
+
+			.bx-pager {
+				
+				@include flex();
+
+				.bx-pager-item {
+					@include button-clear();
+
+					a {
+						display:block;
+						padding: 10px 30px;
+						border-bottom: 2px solid #ccc;	
+						color: #000;
+
+						&:before {
+							content: '0';
+						}
+
+						&:after {
+							content: ".";
+						}
+					}
+
+					a.active {
+						color: $blue;
+						border-color: $blue;	
+					}
+				}
+
+				&:hover {
+					a {
+						color: #000;
+						&.active {
+							color:#000;
+							border-color: #ccc;
+
+						}
+
+						&:hover {
+							color: $blue;
+							border-color: $blue;
+							text-decoration: none;
+						}	
+					}	
+				}
+			}
+		}
+
+		$bx-wrapper-width : 60%;
+
+		.bx-wrapper {
+
+			width:$bx-wrapper-width;
+			margin:auto;
+
+			.home-slider {
+				
+				& > div {
+					padding:0 5px;
+					position:relative;
+
+					.slider-item-overlay {
+						background-color: rgba(0,0,0, .5);
+						@include position(absolute, 0, 5px, 0, 5px);						
+						@include transition(all 1s ease);
+						.slide-number {
+							@include position(absolute, false, false, 30px, 35px);
+							color:rgba(255, 255, 255, 1);
+							@include font-size(22px);
+						}
+					}
+
+					img {
+						width: 100%;
+					}
+
+					.home-slider-prev,
+					.home-slider-next {
+						
+						@include block-size(15%, 50%);
+
+						background-color: rgba(255, 255, 255, .2);
+						display:none;
+						cursor:pointer;
+
+						img{
+							@include block-size(31px, auto);
+						}
+						
+						&:hover {
+							background-color: rgba(255, 255, 255, .5);
+							@include transition(background-color .3s ease);
+						}
+					}
+
+					.home-slider-prev {
+						@include position(absolute, 0, 5px, 50%, false);
+					}
+
+					.home-slider-next {
+						@include position(absolute, 50%, 5px, 0, false);	
+					}
+
+					.slider-progres-bar {
+						@include position(absolute, false, 0, 0, 5px);
+						background-color: $blue;
+						@include block-size(0px, 4px);
+					}
+				}
+
+				& > div[aria-hidden="false"] {
+						
+					.slider-item-overlay {
+						background-color: rgba(0,0,0, .2);
+					}
+
+					.slider-progres-bar {
+						@include calc("width", "100% - 10px");
+						@include transition(width 5s ease);
+					}
+
+					&:hover {
+						.slider-progres-bar {
+							width:0;
+						
+						}
+					}
+
+					.home-slider-prev,
+					.home-slider-next {
+						@include flex();
+					}
+				}	
+			}
+		}
+
+		.bx-viewport {
+			overflow: visible !important;
+		}
+
+		.home-representative-message-section {
+			position:relative;
+			z-index:0;
+			height:500px;
+			overflow: hidden;
+			margin-top: 10px;
+			
+			background: url(img/city-bg.png) center bottom;
+
+			.representative-message-section-bg {
+				@include position(absolute, 0px, false, false, 0px);
+				@include block-size(100%, 100%);
+				background-color:rgba(34, 42, 74, 0.7);
+			    z-index: 10;
+
+			    &>div{
+			    	@include position(absolute, false, 0px);
+				    height: 100%;
+			    }
+			}
+
+			.representative-message-bg-layer {
+				width: 0px;
+			    bottom: 0px;
+			    z-index: 5;
+			    overflow: hidden;
+			    @include transition(1.2s cubic-bezier(0.66, 0.01, 0.445, 0.96) 0.4s);
+
+			    div {
+			    	@include position(absolute, false, 0px);
+			    	@include block-size(100vw, 100%);
+				    background-size: cover;
+			    }
+			}
+
+			.layer-1 {
+				div {
+					background: url(img/summary-bg-layer-1.png) center bottom;
+				}
+			}
+
+			.layer-2 {
+				div {
+					background: url(img/summary-bg-layer-2.png) center bottom;
+				}
+			}
+			.layer-3 {
+				div {
+					background: url(img/summary-bg-layer-3.png) center bottom;
+				}
+			}
+
+			&.view .representative-message-bg-layer {
+				width:100%;
+			}
+
+			.representative-message-man-layer {
+				z-index: 20;
+				height:inherit;
+
+				@include flex(flex-start, flex-start, column);
+				@extend .wrapper;
+
+				img {
+					@include position(absolute, 28px, 0);
+				}
+
+				.representative-message-text {
+				    position: relative;
+				    width: 100%;
+				    margin: auto;
+				    z-index: 20;
+					color:#fff;
+
+				    @include opacity(0);
+				    @include transition(0.8s 1.2s -webkit-transform, 0.8s 1.2s opacity);
+				    @include transform(translateX(-3%));
+
+					h4, p, ul {
+						padding:0;
+						margin:0;
+					}
+					
+					div {
+
+						padding-top:10px;
+						width:60%;
+
+						@include flex(center, space-between);
+
+						ul {
+							list-style:none;
+							padding-left:20px;
+						}
+						
+						li {
+							position:relative;
+						}
+
+						.color-blue {
+							color:$blue;
+						}
+					}
+
+					h4, p {
+						line-height: 65px;
+
+						@include font-size(32px);
+					}
+				}
+			}
+
+			&.view .representative-message-text {
+				transform: none;
+				@include opacity(1);
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+
+.nav {
+	position: relative;
+	padding: 30px 30px 0;
+	width: 100%;
+	@include flex(center, space-between);
+	z-index:4;
+}
+
+.logotype-wrapper {
+	@include block-size(20%, 50px);
+
+	img {
+    	width: 250px;
+	}
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	@include flex();
+	@include calc(width, "60% - 60px");
+
+	li {
+		display: inline-block;
+
+		a {
+			height: 50px;
+			padding: 0 15px 0;
+			border-bottom: transparent solid 2px;	
+			text-decoration: none;
+			color: #fff;
+
+			@include flex();
+			@include font-size(14px);
+
+			&:hover {
+				color: $blue;
+				border-bottom: $blue solid 2px;
+			}
+		}
+	}
+}
+
+.contact-btn-container {
+	width: 20%;
+
+	@include flex(center, flex-end);
+
+	a {
+		background-color: $blue;
+		color: $white;
+		text-decoration: none;
+
+		@include flex();
+		@include block-size(160px, 50px);
+		@include font-size(14px);
+	}
+}

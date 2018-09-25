@@ -1,0 +1,49 @@
+
+$primary-font : Helvetica, sans-serif;
+$blue : #0092FF;
+$white : #fff;
+
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+	@include font-size(30px);
+}
+
+.section-margin {
+	margin-bottom: 100px;
+
+	.section-body {
+		margin-top: 60px; 
+	}
+}
+
+.before-triangle:before {
+	@include position(absolute, 7px, 0, 0, -15px);
+	content: "";
+	border: 7px solid transparent;	
+	border-left: 9px solid $blue;
+	height:1px;
+}
+
+@include media-breakpoint-up(xl) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.wrapper {
+		width: 1200px;
+		margin: auto;
+	}	
+}

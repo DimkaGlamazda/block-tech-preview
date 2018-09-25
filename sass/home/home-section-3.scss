@@ -1,0 +1,88 @@
+.h-section-3 {
+	.section-body {
+		background-color: rgba(0, 146, 255, 1);
+		margin: 90px 0;
+
+		.h-section-3-row {
+			height: 400px;
+			overflow:hidden;
+			position: relative;
+			
+			.shape-left {
+				@include position(relative, false, false, false, -20%);
+				@include block-size(75%, inherit);
+				@include transform(skewX(-19deg) scale(1.1));
+				@include transition(all .33s);
+				overflow: hidden;
+				
+				img {
+					@include position(absolute, 0, false, false, 0);
+					@include block-size(107%, inherit);
+					@include transform(skewX(19deg));
+					@include transition(all .33s);
+				}
+
+				&:hover {
+					@include transform(skewX(-11deg));
+					img {
+						@include transform(skewX(11deg));
+					}
+				}
+
+				& + .content .wrapper {
+					padding-left: 60%;
+				}
+			}
+
+
+
+			.shape-right {
+				@include position(relative, false, -45%, false, false);
+				@include block-size(75%, inherit);
+				@include transform(skewX(19deg) scale(1.1));
+				@include transition(all .33s);
+				overflow: hidden;
+				
+				img {
+					@include position(absolute, 0, false, false, -8%);
+					@include block-size(107%, inherit);
+					@include transform(skewX(-19deg));
+					@include transition(all .33s);
+				}
+
+				&:hover {
+
+					@include transform(skewX(11deg));
+					img {
+						@include transform(skewX(-11deg));
+					}
+				}
+
+				& + .content .wrapper {
+					padding-right: 60%;
+				}
+			}
+
+			.content {
+				@include position(absolute, 0, 0, 0, 0);
+				color: #fff;
+				padding-top: 50px;
+				padding-bottom: 50px;
+
+				h5 {
+					@include font-size(17px);
+					padding-bottom: 20px;
+				}
+
+				h4 {
+					@include font-size(20px);
+					padding-bottom: 20px;	
+				}
+
+				p {
+					@include font-size(20px);
+				}
+			}
+		}
+	}
+}
