@@ -22,8 +22,6 @@ $(function () {
 
 });
 
-
-
 var Video = function ()
 {
     var w = $(window);

@@ -9078,6 +9078,7 @@ body {
   bottom: 0;
   left: 5px;
   transition: all 1s ease;
+  height: inherit;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay {
@@ -9091,6 +9092,110 @@ body {
   color: white;
   font-size: 22px;
   font-size: 1.375rem;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+  color: #fff;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 40px;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 h5 {
+  font-size: 27px;
+  font-size: 1.6875rem;
+  position: relative;
+  font-weight: 400;
+  line-height: 60px;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 h5:after {
+  content: "";
+  position: absolute;
+  top: 75px;
+  right: 30%;
+  left: 30%;
+  height: 1px;
+  width: 40%;
+  background-color: #fff;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 p {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 40px;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-1 a {
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  margin: 10% 30% 10% 10%;
+  padding: 50px;
+  background-color: #0092ff;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-2 h3 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-2 h3:after {
+  content: "";
+  position: absolute;
+  top: 140px;
+  right: 30%;
+  left: 30%;
+  height: 1px;
+  width: 40%;
+  background-color: #fff;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-2 p {
+  text-align: center;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 150px;
+  width: 65%;
+  background-color: #392E7F;
+  color: #fff;
+  margin: 165px auto 0;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-3 div {
+  width: 50%;
+  text-align: center;
+  padding: 40px;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-3 div:nth-child(1) {
+  position: relative;
+}
+.h-section-1 .section-body .bx-wrapper .home-slider > div .slider-item-overlay .content-3 div:nth-child(1):after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 14px;
+  right: -4px;
+  height: 100px;
+  width: 1px;
 }
 .h-section-1 .section-body .bx-wrapper .home-slider > div img {
   width: 100%;
