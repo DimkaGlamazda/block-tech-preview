@@ -1,0 +1,34 @@
+.header-about {
+
+	.body {
+		@include flex(center, center, column);
+		position: relative;
+		margin-top: 30px;
+		background: url('media/about/header-bg.png') center 20% no-repeat;
+		background-size: cover;
+		height:400px;
+		color:#fff;
+		z-index: 1;
+
+		h1 {
+			@include font-size(44px);
+			text-transform: uppercase;
+			font-weight: 400;
+			z-index:3;
+			margin-bottom: 40px;
+		}
+
+		p {
+			@include font-size(24px);
+			margin-top: 60px;
+			z-index:3;
+		}
+
+		&:after {
+			@include position(absolute, 0, 0, 0, 0);
+			content: "";
+			background-color: rgba(0, 0, 0, .4);
+			z-index:2;
+		}
+	}
+}

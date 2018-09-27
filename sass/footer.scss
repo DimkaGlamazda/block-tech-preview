@@ -1,0 +1,27 @@
+.footer {
+	background-color: rgba(34, 42, 74, 1);
+
+	.nav {
+		padding-bottom: 30px;
+	}
+
+	.end {
+		padding: 20px 30px;
+		background-color: rgba(52, 60, 91, 1);
+		@include flex(center, space-between);
+
+		.policy {
+			a {
+				@include font-size(14px);
+				display:inline-block;
+				color: #fff;
+				text-decoration: none;
+				margin-right: 60px;
+			}
+		}
+
+		.coppyright {
+			color:#B3B8C2;
+		}
+	}
+}

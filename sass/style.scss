@@ -2,6 +2,7 @@
 @import "bootstrap/bootstrap";
 @import "common";
 @import "nav";
+@import "footer";
 
 @import "home/header";
 @import "home/section-1";
@@ -9,33 +10,99 @@
 @import "home/section-3";
 @import "home/section-4";
 
-.footer {
-	background-color: rgba(34, 42, 74, 1);
+@import "about/header";
+@import "about/section-1";
+@import "about/section-2";
+@import "about/section-3";
+@import "about/section-4";
+@import "about/section-5";
 
-	.nav {
-		padding-bottom: 30px;
-	}
+.about-section-6 {
 
-	.end {
-		padding: 20px 30px;
-		background-color: rgba(52, 60, 91, 1);
-		@include flex(center, space-between);
+	@extend .wrapper;
 
-		.policy {
-			a {
-				@include font-size(14px);
-				display:inline-block;
-				color: #fff;
-				text-decoration: none;
-				margin-right: 60px;
+	.form {
+		margin: 70px auto;
+		padding: 20px; 
+		-webkit-box-shadow: 0px 1px 23px 5px rgba(0,0,0,0.45); 
+		box-shadow: 0px 1px 23px 5px rgba(0,0,0,0.45);
+		width: 50%;
+
+		.section-title {
+			margin-bottom: 40px;
+		}
+
+		.section-form-row {
+			@include flex();
+			padding-top:30px;
+		}
+
+		.section-form-row:nth-child(1) {
+			justify-content: flex-start;
+		}
+		
+		.section-form-row:nth-child(4) {
+			justify-content: flex-start;
+			width:100%;
+			
+			.form-column {
+				label {
+			 		width:100%;
+				}
+				width:96%;
+				margin:auto;
 			}
 		}
 
-		.coppyright {
-			color:#B3B8C2;
+		
+
+		.form-column {
+			width:50%;
+		}
+		
+		label {
+			display:block;
+			margin:auto;
+			width:90%;
+			padding-bottom: 5px;
+		}
+
+		input {
+			display:block;
+			margin:auto;
+			width:90%;
+			height: 60px;
+		}
+
+		textarea {
+			display:block;
+			margin:auto;
+			width:100%;
+			height: 200px;
+			resize:none;
+		}
+
+		.section-form-row:nth-child(5) {
+			justify-content: flex-end;
+			input[type=submit] {
+				@include button-clear();
+				width: 150px;
+				background-color: rgba(0, 146, 255, 1);
+				color:#fff;
+				margin-right: 2%;
+			}
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 

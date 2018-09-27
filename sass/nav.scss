@@ -1,21 +1,41 @@
 
-.nav {
+.nav, .nav-inverse {
+	@include flex(center, space-between);
 	position: relative;
 	padding: 30px 30px 0;
 	width: 100%;
-	@include flex(center, space-between);
 	z-index:4;
 }
 
-.logotype-wrapper {
-	@include block-size(20%, 50px);
+.logotype {
+	@include block-size(290px, 60px);
+	display:block;
+}
 
-	img {
-    	width: 250px;
+.nav {
+	.logotype {
+		background:url('media/icons/logo.svg') center center no-repeat;
+		background-size: cover;
+	}
+
+	.menu a {
+		color: #fff;
+	}
+}
+
+.nav-inverse {
+	.logotype {
+		background:url('media/icons/logo-inverse.svg') center center no-repeat;
+		background-size: cover;
+	}
+
+	.menu a {
+		color: #000;
 	}
 }
 
 .menu {
+
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -31,7 +51,6 @@
 			padding: 0 15px 0;
 			border-bottom: transparent solid 2px;	
 			text-decoration: none;
-			color: #fff;
 
 			@include flex();
 			@include font-size(14px);
