@@ -8614,7 +8614,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.wrapper, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
+.wrapper, .cases-section-4, .cases-section-3, .cases-section-2, .cases-section-1, .header-cases .body, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
   position: relative;
   z-index: 1;
 }
@@ -8626,10 +8626,10 @@ body {
   font-size: 1.875rem;
 }
 
-.section-margin, .about-section-1, .h-section-1, .header {
+.section-margin, .cases-section-2, .about-section-1, .h-section-1, .header {
   margin-bottom: 100px;
 }
-.section-margin .section-body, .about-section-1 .section-body, .h-section-1 .section-body, .header .section-body {
+.section-margin .section-body, .cases-section-2 .section-body, .about-section-1 .section-body, .h-section-1 .section-body, .header .section-body {
   margin-top: 60px;
 }
 
@@ -8646,12 +8646,12 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .wrapper, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
+  .wrapper, .cases-section-4, .cases-section-3, .cases-section-2, .cases-section-1, .header-cases .body, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  .wrapper, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
+  .wrapper, .cases-section-4, .cases-section-3, .cases-section-2, .cases-section-1, .header-cases .body, .about-section-6, .about-section-4 .section-body, .about-section-3, .h-section-4 .section-body, .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-1, .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer {
     width: 1200px;
     margin: auto;
   }
@@ -8781,7 +8781,7 @@ body {
   width: 100%;
 }
 
-.header .wrapper, .header .about-section-6, .header .about-section-4 .section-body, .about-section-4 .header .section-body, .header .about-section-3, .header .h-section-4 .section-body, .h-section-4 .header .section-body, .header .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .header .h-section-part-2-body, .header .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .header .h-section-part-1, .header .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .header .representative-message-man-layer {
+.header .wrapper, .header .cases-section-4, .header .cases-section-3, .header .cases-section-2, .header .cases-section-1, .header .header-cases .body, .header-cases .header .body, .header .about-section-6, .header .about-section-4 .section-body, .about-section-4 .header .section-body, .header .about-section-3, .header .h-section-4 .section-body, .h-section-4 .header .section-body, .header .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .header .h-section-part-2-body, .header .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .header .h-section-part-1, .header .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .header .representative-message-man-layer {
   position: relative;
   height: 100%;
   display: flex;
@@ -9671,7 +9671,7 @@ body {
   -webkit-transform: skewX(11deg);
   transform: skewX(11deg);
 }
-.h-section-3 .section-body .h-section-3-row .shape-left + .content .wrapper, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-6, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-4 .section-body, .about-section-4 .h-section-3 .section-body .h-section-3-row .shape-left + .content .section-body, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-3, .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-4 .section-body, .h-section-4 .h-section-3 .section-body .h-section-3-row .shape-left + .content .section-body, .h-section-3 .h-section-1 .section-body .h-section-3-row .shape-left + .content .home-representative-message-section .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .h-section-3-row .shape-left + .content .home-representative-message-section .representative-message-man-layer, .h-section-3 .h-section-1 .section-body .home-representative-message-section .h-section-3-row .shape-left + .content .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .home-representative-message-section .h-section-3-row .shape-left + .content .representative-message-man-layer, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-left + .content .h-section-part-1, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-part-1, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-left + .content .h-section-part-2 .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-part-2 .h-section-part-2-body, .h-section-3 .h-section-2 .section-body .h-section-part-2 .h-section-3-row .shape-left + .content .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-part-2 .h-section-3-row .shape-left + .content .h-section-part-2-body {
+.h-section-3 .section-body .h-section-3-row .shape-left + .content .wrapper, .h-section-3 .section-body .h-section-3-row .shape-left + .content .cases-section-4, .h-section-3 .section-body .h-section-3-row .shape-left + .content .cases-section-3, .h-section-3 .section-body .h-section-3-row .shape-left + .content .cases-section-2, .h-section-3 .section-body .h-section-3-row .shape-left + .content .cases-section-1, .h-section-3 .section-body .h-section-3-row .shape-left + .content .header-cases .body, .header-cases .h-section-3 .section-body .h-section-3-row .shape-left + .content .body, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-6, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-4 .section-body, .about-section-4 .h-section-3 .section-body .h-section-3-row .shape-left + .content .section-body, .h-section-3 .section-body .h-section-3-row .shape-left + .content .about-section-3, .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-4 .section-body, .h-section-4 .h-section-3 .section-body .h-section-3-row .shape-left + .content .section-body, .h-section-3 .h-section-1 .section-body .h-section-3-row .shape-left + .content .home-representative-message-section .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .h-section-3-row .shape-left + .content .home-representative-message-section .representative-message-man-layer, .h-section-3 .h-section-1 .section-body .home-representative-message-section .h-section-3-row .shape-left + .content .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .home-representative-message-section .h-section-3-row .shape-left + .content .representative-message-man-layer, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-left + .content .h-section-part-1, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-part-1, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-left + .content .h-section-part-2 .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-left + .content .h-section-part-2 .h-section-part-2-body, .h-section-3 .h-section-2 .section-body .h-section-part-2 .h-section-3-row .shape-left + .content .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-part-2 .h-section-3-row .shape-left + .content .h-section-part-2-body {
   padding-left: 60%;
 }
 .h-section-3 .section-body .h-section-3-row .shape-right {
@@ -9734,7 +9734,7 @@ body {
   -webkit-transform: skewX(-11deg);
   transform: skewX(-11deg);
 }
-.h-section-3 .section-body .h-section-3-row .shape-right + .content .wrapper, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-6, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-4 .section-body, .about-section-4 .h-section-3 .section-body .h-section-3-row .shape-right + .content .section-body, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-3, .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-4 .section-body, .h-section-4 .h-section-3 .section-body .h-section-3-row .shape-right + .content .section-body, .h-section-3 .h-section-1 .section-body .h-section-3-row .shape-right + .content .home-representative-message-section .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .h-section-3-row .shape-right + .content .home-representative-message-section .representative-message-man-layer, .h-section-3 .h-section-1 .section-body .home-representative-message-section .h-section-3-row .shape-right + .content .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .home-representative-message-section .h-section-3-row .shape-right + .content .representative-message-man-layer, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-right + .content .h-section-part-1, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-part-1, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-right + .content .h-section-part-2 .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-part-2 .h-section-part-2-body, .h-section-3 .h-section-2 .section-body .h-section-part-2 .h-section-3-row .shape-right + .content .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-part-2 .h-section-3-row .shape-right + .content .h-section-part-2-body {
+.h-section-3 .section-body .h-section-3-row .shape-right + .content .wrapper, .h-section-3 .section-body .h-section-3-row .shape-right + .content .cases-section-4, .h-section-3 .section-body .h-section-3-row .shape-right + .content .cases-section-3, .h-section-3 .section-body .h-section-3-row .shape-right + .content .cases-section-2, .h-section-3 .section-body .h-section-3-row .shape-right + .content .cases-section-1, .h-section-3 .section-body .h-section-3-row .shape-right + .content .header-cases .body, .header-cases .h-section-3 .section-body .h-section-3-row .shape-right + .content .body, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-6, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-4 .section-body, .about-section-4 .h-section-3 .section-body .h-section-3-row .shape-right + .content .section-body, .h-section-3 .section-body .h-section-3-row .shape-right + .content .about-section-3, .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-4 .section-body, .h-section-4 .h-section-3 .section-body .h-section-3-row .shape-right + .content .section-body, .h-section-3 .h-section-1 .section-body .h-section-3-row .shape-right + .content .home-representative-message-section .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .h-section-3-row .shape-right + .content .home-representative-message-section .representative-message-man-layer, .h-section-3 .h-section-1 .section-body .home-representative-message-section .h-section-3-row .shape-right + .content .representative-message-man-layer, .h-section-1 .h-section-3 .section-body .home-representative-message-section .h-section-3-row .shape-right + .content .representative-message-man-layer, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-right + .content .h-section-part-1, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-part-1, .h-section-3 .h-section-2 .section-body .h-section-3-row .shape-right + .content .h-section-part-2 .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-3-row .shape-right + .content .h-section-part-2 .h-section-part-2-body, .h-section-3 .h-section-2 .section-body .h-section-part-2 .h-section-3-row .shape-right + .content .h-section-part-2-body, .h-section-2 .h-section-3 .section-body .h-section-part-2 .h-section-3-row .shape-right + .content .h-section-part-2-body {
   padding-right: 60%;
 }
 .h-section-3 .section-body .h-section-3-row .content {
@@ -9905,7 +9905,7 @@ body {
   font-size: 0.9375rem;
 }
 
-.about-section-2 .wrapper, .about-section-2 .about-section-6, .about-section-2 .about-section-4 .section-body, .about-section-4 .about-section-2 .section-body, .about-section-2 .about-section-3, .about-section-2 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .about-section-2 .representative-message-man-layer, .about-section-2 .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .about-section-2 .h-section-part-1, .about-section-2 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .about-section-2 .h-section-part-2-body, .about-section-2 .h-section-4 .section-body, .h-section-4 .about-section-2 .section-body {
+.about-section-2 .wrapper, .about-section-2 .cases-section-4, .about-section-2 .cases-section-3, .about-section-2 .cases-section-2, .about-section-2 .cases-section-1, .about-section-2 .header-cases .body, .header-cases .about-section-2 .body, .about-section-2 .about-section-6, .about-section-2 .about-section-4 .section-body, .about-section-4 .about-section-2 .section-body, .about-section-2 .about-section-3, .about-section-2 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .about-section-2 .representative-message-man-layer, .about-section-2 .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .about-section-2 .h-section-part-1, .about-section-2 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .about-section-2 .h-section-part-2-body, .about-section-2 .h-section-4 .section-body, .h-section-4 .about-section-2 .section-body {
   position: relative;
 }
 .about-section-2 .map {
@@ -10010,7 +10010,7 @@ body {
   width: 30%;
 }
 
-.about-section-5 .wrapper, .about-section-5 .about-section-6, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer, .about-section-5 .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .about-section-5 .h-section-part-1, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body, .about-section-5 .h-section-4 .section-body, .h-section-4 .about-section-5 .section-body, .about-section-5 .about-section-3, .about-section-5 .about-section-4 .section-body, .about-section-4 .about-section-5 .section-body {
+.about-section-5 .wrapper, .about-section-5 .cases-section-4, .about-section-5 .cases-section-3, .about-section-5 .cases-section-2, .about-section-5 .cases-section-1, .about-section-5 .header-cases .body, .header-cases .about-section-5 .body, .about-section-5 .about-section-6, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer, .about-section-5 .h-section-2 .section-body .h-section-part-1, .h-section-2 .section-body .about-section-5 .h-section-part-1, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body, .about-section-5 .h-section-4 .section-body, .h-section-4 .about-section-5 .section-body, .about-section-5 .about-section-3, .about-section-5 .about-section-4 .section-body, .about-section-4 .about-section-5 .section-body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10022,7 +10022,7 @@ body {
   color: #fff;
   z-index: 1;
 }
-.about-section-5 .wrapper:after, .about-section-5 .about-section-6:after, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer:after, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer:after, .about-section-5 .h-section-2 .section-body .h-section-part-1:after, .h-section-2 .section-body .about-section-5 .h-section-part-1:after, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body:after, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body:after, .about-section-5 .h-section-4 .section-body:after, .h-section-4 .about-section-5 .section-body:after, .about-section-5 .about-section-3:after, .about-section-5 .about-section-4 .section-body:after, .about-section-4 .about-section-5 .section-body:after {
+.about-section-5 .wrapper:after, .about-section-5 .cases-section-4:after, .about-section-5 .cases-section-3:after, .about-section-5 .cases-section-2:after, .about-section-5 .cases-section-1:after, .about-section-5 .header-cases .body:after, .header-cases .about-section-5 .body:after, .about-section-5 .about-section-6:after, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer:after, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer:after, .about-section-5 .h-section-2 .section-body .h-section-part-1:after, .h-section-2 .section-body .about-section-5 .h-section-part-1:after, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body:after, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body:after, .about-section-5 .h-section-4 .section-body:after, .h-section-4 .about-section-5 .section-body:after, .about-section-5 .about-section-3:after, .about-section-5 .about-section-4 .section-body:after, .about-section-4 .about-section-5 .section-body:after {
   content: "";
   position: absolute;
   top: 0;
@@ -10031,7 +10031,7 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.about-section-5 .wrapper h4, .about-section-5 .about-section-6 h4, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer h4, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer h4, .about-section-5 .h-section-2 .section-body .h-section-part-1 h4, .h-section-2 .section-body .about-section-5 .h-section-part-1 h4, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body h4, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body h4, .about-section-5 .h-section-4 .section-body h4, .h-section-4 .about-section-5 .section-body h4, .about-section-5 .about-section-3 h4, .about-section-5 .about-section-4 .section-body h4, .about-section-4 .about-section-5 .section-body h4 {
+.about-section-5 .wrapper h4, .about-section-5 .cases-section-4 h4, .about-section-5 .cases-section-3 h4, .about-section-5 .cases-section-2 h4, .about-section-5 .cases-section-1 h4, .about-section-5 .header-cases .body h4, .header-cases .about-section-5 .body h4, .about-section-5 .about-section-6 h4, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer h4, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer h4, .about-section-5 .h-section-2 .section-body .h-section-part-1 h4, .h-section-2 .section-body .about-section-5 .h-section-part-1 h4, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body h4, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body h4, .about-section-5 .h-section-4 .section-body h4, .h-section-4 .about-section-5 .section-body h4, .about-section-5 .about-section-3 h4, .about-section-5 .about-section-4 .section-body h4, .about-section-4 .about-section-5 .section-body h4 {
   font-size: 34px;
   font-size: 2.125rem;
   z-index: 3;
@@ -10039,7 +10039,7 @@ body {
   padding-bottom: 40px;
   position: relative;
 }
-.about-section-5 .wrapper h4:after, .about-section-5 .about-section-6 h4:after, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer h4:after, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer h4:after, .about-section-5 .h-section-2 .section-body .h-section-part-1 h4:after, .h-section-2 .section-body .about-section-5 .h-section-part-1 h4:after, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body h4:after, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body h4:after, .about-section-5 .h-section-4 .section-body h4:after, .h-section-4 .about-section-5 .section-body h4:after, .about-section-5 .about-section-3 h4:after, .about-section-5 .about-section-4 .section-body h4:after, .about-section-4 .about-section-5 .section-body h4:after {
+.about-section-5 .wrapper h4:after, .about-section-5 .cases-section-4 h4:after, .about-section-5 .cases-section-3 h4:after, .about-section-5 .cases-section-2 h4:after, .about-section-5 .cases-section-1 h4:after, .about-section-5 .header-cases .body h4:after, .header-cases .about-section-5 .body h4:after, .about-section-5 .about-section-6 h4:after, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer h4:after, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer h4:after, .about-section-5 .h-section-2 .section-body .h-section-part-1 h4:after, .h-section-2 .section-body .about-section-5 .h-section-part-1 h4:after, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body h4:after, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body h4:after, .about-section-5 .h-section-4 .section-body h4:after, .h-section-4 .about-section-5 .section-body h4:after, .about-section-5 .about-section-3 h4:after, .about-section-5 .about-section-4 .section-body h4:after, .about-section-4 .about-section-5 .section-body h4:after {
   content: "";
   position: absolute;
   left: 30%;
@@ -10048,13 +10048,13 @@ body {
   width: 40%;
   background-color: #fff;
 }
-.about-section-5 .wrapper p, .about-section-5 .about-section-6 p, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer p, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer p, .about-section-5 .h-section-2 .section-body .h-section-part-1 p, .h-section-2 .section-body .about-section-5 .h-section-part-1 p, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body p, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body p, .about-section-5 .h-section-4 .section-body p, .h-section-4 .about-section-5 .section-body p, .about-section-5 .about-section-3 p, .about-section-5 .about-section-4 .section-body p, .about-section-4 .about-section-5 .section-body p {
+.about-section-5 .wrapper p, .about-section-5 .cases-section-4 p, .about-section-5 .cases-section-3 p, .about-section-5 .cases-section-2 p, .about-section-5 .cases-section-1 p, .about-section-5 .header-cases .body p, .header-cases .about-section-5 .body p, .about-section-5 .about-section-6 p, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer p, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer p, .about-section-5 .h-section-2 .section-body .h-section-part-1 p, .h-section-2 .section-body .about-section-5 .h-section-part-1 p, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body p, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body p, .about-section-5 .h-section-4 .section-body p, .h-section-4 .about-section-5 .section-body p, .about-section-5 .about-section-3 p, .about-section-5 .about-section-4 .section-body p, .about-section-4 .about-section-5 .section-body p {
   font-size: 20px;
   font-size: 1.25rem;
   z-index: 3;
   margin-bottom: 50px;
 }
-.about-section-5 .wrapper a, .about-section-5 .about-section-6 a, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer a, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer a, .about-section-5 .h-section-2 .section-body .h-section-part-1 a, .h-section-2 .section-body .about-section-5 .h-section-part-1 a, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body a, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body a, .about-section-5 .h-section-4 .section-body a, .h-section-4 .about-section-5 .section-body a, .about-section-5 .about-section-3 a, .about-section-5 .about-section-4 .section-body a, .about-section-4 .about-section-5 .section-body a {
+.about-section-5 .wrapper a, .about-section-5 .cases-section-4 a, .about-section-5 .cases-section-3 a, .about-section-5 .cases-section-2 a, .about-section-5 .cases-section-1 a, .about-section-5 .header-cases .body a, .header-cases .about-section-5 .body a, .about-section-5 .about-section-6 a, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer a, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer a, .about-section-5 .h-section-2 .section-body .h-section-part-1 a, .h-section-2 .section-body .about-section-5 .h-section-part-1 a, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body a, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body a, .about-section-5 .h-section-4 .section-body a, .h-section-4 .about-section-5 .section-body a, .about-section-5 .about-section-3 a, .about-section-5 .about-section-4 .section-body a, .about-section-4 .about-section-5 .section-body a {
   z-index: 3;
   color: #fff;
   display: inline-block;
@@ -10062,7 +10062,7 @@ body {
   border: 1px solid #fff;
   padding: 10px 20px;
 }
-.about-section-5 .wrapper .arrow-bottom, .about-section-5 .about-section-6 .arrow-bottom, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer .arrow-bottom, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer .arrow-bottom, .about-section-5 .h-section-2 .section-body .h-section-part-1 .arrow-bottom, .h-section-2 .section-body .about-section-5 .h-section-part-1 .arrow-bottom, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body .arrow-bottom, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body .arrow-bottom, .about-section-5 .h-section-4 .section-body .arrow-bottom, .h-section-4 .about-section-5 .section-body .arrow-bottom, .about-section-5 .about-section-3 .arrow-bottom, .about-section-5 .about-section-4 .section-body .arrow-bottom, .about-section-4 .about-section-5 .section-body .arrow-bottom {
+.about-section-5 .wrapper .arrow-bottom, .about-section-5 .cases-section-4 .arrow-bottom, .about-section-5 .cases-section-3 .arrow-bottom, .about-section-5 .cases-section-2 .arrow-bottom, .about-section-5 .cases-section-1 .arrow-bottom, .about-section-5 .header-cases .body .arrow-bottom, .header-cases .about-section-5 .body .arrow-bottom, .about-section-5 .about-section-6 .arrow-bottom, .about-section-5 .h-section-1 .section-body .home-representative-message-section .representative-message-man-layer .arrow-bottom, .h-section-1 .section-body .home-representative-message-section .about-section-5 .representative-message-man-layer .arrow-bottom, .about-section-5 .h-section-2 .section-body .h-section-part-1 .arrow-bottom, .h-section-2 .section-body .about-section-5 .h-section-part-1 .arrow-bottom, .about-section-5 .h-section-2 .section-body .h-section-part-2 .h-section-part-2-body .arrow-bottom, .h-section-2 .section-body .h-section-part-2 .about-section-5 .h-section-part-2-body .arrow-bottom, .about-section-5 .h-section-4 .section-body .arrow-bottom, .h-section-4 .about-section-5 .section-body .arrow-bottom, .about-section-5 .about-section-3 .arrow-bottom, .about-section-5 .about-section-4 .section-body .arrow-bottom, .about-section-4 .about-section-5 .section-body .arrow-bottom {
   z-index: 3;
   display: inline-block;
   width: 16px;
@@ -10147,6 +10147,152 @@ body {
 .about-section-6 .form .section-form-row:nth-child(5) input[type=submit]::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+.header-cases .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  height: 400px;
+  z-index: 1;
+}
+.header-cases .body h1 {
+  font-size: 44px;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  z-index: 3;
+  margin-bottom: 40px;
+  position: relative;
+}
+.header-cases .body h1:after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  bottom: -90%;
+  width: 40%;
+  height: 2px;
+  background-color: #0092FF;
+  z-index: 4;
+}
+.header-cases .body p {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-top: 60px;
+  z-index: 3;
+}
+
+.case-image-left {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+.case-image-left .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 2;
+}
+.case-image-left .text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 65%;
+  height: 500px;
+  z-index: 1;
+  padding: 0 5% 0 20%;
+  background-color: #222a4a;
+  color: #fff;
+}
+.case-image-left .text h5 {
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.case-image-left .text h4 {
+  font-size: 34px;
+  font-size: 2.125rem;
+  color: #0092ff;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.case-image-left .text p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-top: 10px;
+}
+.case-image-left .text a {
+  color: #fff;
+  display: inline-block;
+  background-color: #0092ff;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.case-image-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 500px;
+  margin: 70px 0;
+}
+.case-image-right .text {
+  width: 50%;
+  padding: 0 10% 0 5%;
+}
+.case-image-right .text h5 {
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.case-image-right .text h4 {
+  font-size: 34px;
+  font-size: 2.125rem;
+  color: #0092ff;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.case-image-right .text p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.case-image-right .text a {
+  color: #fff;
+  display: inline-block;
+  background-color: #0092ff;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.case-image-right .image {
+  width: 50%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.case-image-right .image img {
+  height: 400px;
+}
+
+.cases-section-3 .text {
+  background-color: #392e7f;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,94 +16,21 @@
 @import "about/section-3";
 @import "about/section-4";
 @import "about/section-5";
+@import "about/section-6";
 
-.about-section-6 {
+@import "cases/header";
+@import "cases/section-1";
+@import "cases/section-2";
 
+.cases-section-3 {
 	@extend .wrapper;
-
-	.form {
-		margin: 70px auto;
-		padding: 20px; 
-		-webkit-box-shadow: 0px 1px 23px 5px rgba(0,0,0,0.45); 
-		box-shadow: 0px 1px 23px 5px rgba(0,0,0,0.45);
-		width: 50%;
-
-		.section-title {
-			margin-bottom: 40px;
-		}
-
-		.section-form-row {
-			@include flex();
-			padding-top:30px;
-		}
-
-		.section-form-row:nth-child(1) {
-			justify-content: flex-start;
-		}
-		
-		.section-form-row:nth-child(4) {
-			justify-content: flex-start;
-			width:100%;
-			
-			.form-column {
-				label {
-			 		width:100%;
-				}
-				width:96%;
-				margin:auto;
-			}
-		}
-
-		
-
-		.form-column {
-			width:50%;
-		}
-		
-		label {
-			display:block;
-			margin:auto;
-			width:90%;
-			padding-bottom: 5px;
-		}
-
-		input {
-			display:block;
-			margin:auto;
-			width:90%;
-			height: 60px;
-		}
-
-		textarea {
-			display:block;
-			margin:auto;
-			width:100%;
-			height: 200px;
-			resize:none;
-		}
-
-		.section-form-row:nth-child(5) {
-			justify-content: flex-end;
-			input[type=submit] {
-				@include button-clear();
-				width: 150px;
-				background-color: rgba(0, 146, 255, 1);
-				color:#fff;
-				margin-right: 2%;
-			}
-		}
+	
+	.text {
+		background-color: rgba(57, 46, 127, 1);
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.cases-section-4 {
+	@extend .wrapper;
+}
 

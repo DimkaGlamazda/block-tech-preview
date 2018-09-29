@@ -1,0 +1,53 @@
+.cases-section-2 {
+	@extend .wrapper;
+	@extend .section-margin;
+}
+
+.case-image-right {
+	@include flex();
+	height: 500px;
+	margin: 70px 0;
+
+	.text {
+		width:50%;
+		padding: 0 10% 0 5%;
+
+		h5 {
+			font-weight: 400;
+			@include font-size(24px);
+		}
+
+		h4 {
+			@include font-size(34px);
+			color: rgba(0, 146, 255, 1);
+			font-weight: 400;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			padding-top: 10px;
+			@include font-size(14px);
+		}
+
+		a {
+			color:#fff;
+			display: inline-block;
+			background-color: rgba(0, 146, 255, 1);
+			padding: 10px 20px;
+			font-weight:400;
+			text-decoration: none;
+		}
+	}
+
+	.image {
+		width: 50%;
+		overflow: hidden;
+		height:100%;
+		@include flex();
+
+		img {
+			height:400px;
+		}
+	}
+}
