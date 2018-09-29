@@ -1,0 +1,57 @@
+.cases-section-1 {
+	@extend .wrapper;
+	
+}
+
+.case-image-left {
+	
+	position:relative;
+	overflow:hidden;
+	height: 600px;
+
+	.image {
+		@include position(absolute, 0, false, false, 0);
+		width: 50%;
+		height: 500px;
+		overflow: hidden;
+		z-index:2;
+	}
+
+	.text {
+		@include position(absolute, false, 0, 0);
+		@include flex(flex-start, center, column);
+		width: 65%;
+		height: 500px;
+		z-index:1;
+		padding: 0 5% 0 20%;
+		background-color: rgba(34, 42, 74, 1);
+		color: #fff;
+
+		h5 {
+			font-weight: 400;
+			@include font-size(24px);
+		}
+
+		h4 {
+			@include font-size(34px);
+			color: rgba(0, 146, 255, 1);
+			font-weight: 400;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		p {
+			@include font-size(14px);
+			padding-top: 10px;
+		}
+
+		a {
+			color:#fff;
+			display: inline-block;
+			background-color: rgba(0, 146, 255, 1);
+			padding: 10px 20px;
+			font-weight:400;
+			text-decoration: none;
+		}
+	}
+}

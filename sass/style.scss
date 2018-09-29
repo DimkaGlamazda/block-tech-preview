@@ -2,6 +2,7 @@
 @import "bootstrap/bootstrap";
 @import "common";
 @import "nav";
+@import "footer";
 
 @import "home/header";
 @import "home/section-1";
@@ -9,34 +10,27 @@
 @import "home/section-3";
 @import "home/section-4";
 
-.footer {
-	background-color: rgba(34, 42, 74, 1);
+@import "about/header";
+@import "about/section-1";
+@import "about/section-2";
+@import "about/section-3";
+@import "about/section-4";
+@import "about/section-5";
+@import "about/section-6";
 
-	.nav {
-		padding-bottom: 30px;
-	}
+@import "cases/header";
+@import "cases/section-1";
+@import "cases/section-2";
 
-	.end {
-		padding: 20px 30px;
-		background-color: rgba(52, 60, 91, 1);
-		@include flex(center, space-between);
-
-		.policy {
-			a {
-				@include font-size(14px);
-				display:inline-block;
-				color: #fff;
-				text-decoration: none;
-				margin-right: 60px;
-			}
-		}
-
-		.coppyright {
-			color:#B3B8C2;
-		}
+.cases-section-3 {
+	@extend .wrapper;
+	
+	.text {
+		background-color: rgba(57, 46, 127, 1);
 	}
 }
 
-
-
+.cases-section-4 {
+	@extend .wrapper;
+}
 

@@ -1,0 +1,26 @@
+.about-section-2 {
+
+	.wrapper {
+		position: relative;
+	}
+
+	.map {
+		height: 550px;
+		background-color: #ccc;
+		margin-bottom: 50px;
+	}
+
+	.map-note {
+		@include position(absolute, false, 0, -50px);
+		background-color: rgba(0, 146, 255, 1);
+		color: #fff;
+		padding: 35px;
+
+		h4 {
+			padding-bottom: 30px;
+		}
+		p {
+			padding-bottom:0;
+		}
+	}
+}

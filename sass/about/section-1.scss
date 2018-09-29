@@ -1,0 +1,30 @@
+.about-section-1 {
+
+	@extend .section-margin;
+
+	.section-title {
+		margin: 90px 0 50px;
+	}
+
+	.section-body {
+		width: 50%;
+		margin: auto;
+		border-top: 3px solid rgba(0, 146, 255, 1);
+
+		.about-row {
+			@include flex(center, flex-start);
+			padding:30px 0;
+			border-bottom: 3px solid rgba(0, 146, 255, 1);
+		}
+	}
+
+	.title {
+		width:30%;
+		@include font-size(17px);
+	}
+
+	.description {
+		width:70%;
+		@include font-size(15px);
+	}
+}

@@ -1,0 +1,48 @@
+.about-section-3 {
+	@extend .wrapper;
+	background-color: rgba(246, 248, 249, 1);
+	padding: 50px 0 0;
+	background: url(media/about/bg.png) bottom right no-repeat;
+    background-size: 71%;
+	.section-title {
+		padding: 0 0 30px;
+	}
+
+	.section-body {
+		position: relative;
+		width: 100%;
+		padding-left: 44%;
+		overflow: hidden;
+		
+
+		h5 {
+			span {
+				display: block;
+				padding-bottom: 10px;
+			}
+			padding: 0 50px 15px 10px;
+			@include font-size(18px);
+		}
+
+		p {
+			padding: 0 50px 10px 10px;
+		}
+
+		div {
+			text-align: right;
+			padding: 0 50px 50px 10px;
+			span {
+				display:block;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	.man {
+		@include position(absolute, false, false, 0, -10%);
+		background: url("media/about/man.png") no-repeat;
+		background-size: cover;
+		width:600px;
+		height:750px;
+	}
+}
